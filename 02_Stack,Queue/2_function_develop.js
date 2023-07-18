@@ -1,9 +1,8 @@
-//테스트 2 미통과
 function solution(progresses, speeds) {
   var r_date = [];
   let days = 0;
   for (var i = 0; i < progresses.length; i++) {
-    days = (100 - progresses[i]) / speeds[i];
+    days = Math.ceil((100 - progresses[i]) / speeds[i]);
     r_date.push(days);
   }
   var answer = [];
