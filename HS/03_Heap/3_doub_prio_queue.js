@@ -1,7 +1,9 @@
 function solution(operations) {
   var p_queue = [];
+
   operations.forEach((op) => {
     op = op.split(" ");
+
     switch (op[0]) {
       case "I":
         p_queue.push(parseInt(op[1]));
